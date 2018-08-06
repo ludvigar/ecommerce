@@ -1,13 +1,15 @@
 <?php
 namespace App\Http\Controllers;
-use App\City;
-use App\Country;
+use Illuminate\Http\Request;
+
 use App\Http\Requests\StoreUserProfile;
 use App\Profile;
 use App\Role;
 use App\State;
 use App\User;
-use Illuminate\Http\Request;
+use App\City;
+use App\Country;
+
 class ProfileController extends Controller
 {
     /**
@@ -18,7 +20,7 @@ class ProfileController extends Controller
     public function index()
     {
         $users = User::with('role','profile')->paginate(3);
-        return view('admin.users.index',compact('users'));
+        return view('admin.users.index', compact('users'));
     }
 /**
      * Display Trashed listing of the resource.
@@ -100,6 +102,8 @@ class ProfileController extends Controller
         
         $roles = Role::all();
         return view('admin.users.create',compact('user','roles'));
+
+        //return $user . '<br>-----role----' .$roles;
     }
     /**
      * Update the specified resource in storage.

@@ -10,8 +10,8 @@
 
         <title>{{ config('app.name', 'Verde Aroma') }}</title>
 
-        <meta name="description" content="Queen, premium HTML5&amp;CSS3 template">
-        <meta name="author" content="MosaicDesign">
+        <meta name="description" content="Verde Aroma, premium Laravel ecommerce">
+        <meta name="author" content="ELB">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
         <!-- Scripts -->
@@ -23,16 +23,18 @@
     </head>
     <body>
 
-        @include('queen.sections.header')
-        @include('queen.sections.slider')
-        @include('queen.sections.banners')
-        @include('queen.sections.top_sale')
-        @include('queen.sections.product')
-        @include('queen.sections.background_banner')
-        @include('queen.sections.services')
-        @include('queen.sections.client_say')
-        @include('queen.sections.partners')
-        @include('queen.sections.flickr')
+    @include('queen.sections.header')
+
+    @include('queen.sections.slider')
+    
+    @include('queen.sections.banners')
+    @include('queen.sections.top_sale')
+    @include('queen.sections.product')
+    @include('queen.sections.background_banner')
+    @include('queen.sections.services')
+    @include('queen.sections.client_say')
+    @include('queen.sections.partners')
+    @include('queen.sections.flickr')
         
         <!-- Section footer -->
         <footer id="footer">
@@ -159,7 +161,7 @@
                         <div class="col-md-12">
                             <a href="index.html" class="logo-copy pull-left"></a>
                             <p class="pull-left">
-                                <a href="">Copyright © 2017</a> VERDE AROMA | Todos los derechos reservados.<br>Diseñado por: <a href="http://mosaicdesign.uz" target="_blank">Mosaic Design</a>
+                                <a href="">Copyright © 2018</a> VERDE AROMA | Todos los derechos reservados.<br>Diseñado por: <a href="http://verdearoma.com.ar" target="_blank">Verde Aroma</a>
                             </p>
                             <ul class="footer-payments pull-right">
                                 <li><img src="includes/img/payment-maestro.jpg" alt="payment" /></li>

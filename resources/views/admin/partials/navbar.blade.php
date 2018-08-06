@@ -35,12 +35,18 @@
                 <a class="dropdown-item" href="{{route('admin.product.trash')}}">Productos en Papelera</a>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link  @if(request()->url() == route('admin.profile.index')) {{'active'}} @else {{''}} @endif" href="{{route('admin.profile.index')}}">
+        <li class="nav-item dropdown">
+            <a id="productDropdown" class="nav-link @if(request()->url() == route('admin.profile.index')) {{'active'}} @endif  dropdown-toggle" href="javascript:;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span data-feather="users"></span>
-                Clientes
+                Usuarios
             </a>
+            <div class="dropdown-menu" aria-labelledby="productDropdown">
+                <a class="dropdown-item" href="{{route('admin.profile.index')}}">Lista de Usuarios</a>
+                <a class="dropdown-item" href="{{route('admin.profile.create')}}">Agregar Usuario</a>
+                <a class="dropdown-item" href="{{route('admin.profile.trash')}}">Usuarios Bloqueados</a>
+            </div>
         </li>
+        
 
         <li class="nav-item">
             <a class="nav-link" href="#">

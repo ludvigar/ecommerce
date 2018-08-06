@@ -1,8 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 use App\Category;
-use App\Http\Requests\StoreProduct;
 use App\Product;
+use App\Http\Requests\StoreProduct;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 class ProductController extends Controller

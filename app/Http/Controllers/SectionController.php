@@ -47,6 +47,7 @@ class SectionController extends Controller
     public function show(Section $section)
     {
         //
+        
     }
 
     /**
